@@ -14,6 +14,7 @@
 | [`twin-anomaly`](https://github.com/joshikeyur01/twin-anomaly) | L4 | Fault injection → labelled dataset → ML detection | ✅ complete |
 | [`twin-fleet`](https://github.com/joshikeyur01/twin-fleet) | L4 | The same stack at N robots, with load tests that find the limits | ✅ complete |
 | [`twin-turbofan`](https://github.com/joshikeyur01/twin-turbofan) | — | RUL prediction: the predictive-maintenance archetype | 🚧 pipeline correct, awaiting real C-MAPSS data |
+| [`twin-gateway`](https://github.com/joshikeyur01/twin-gateway) | L2+L3 | The seam: fleet MQTT → keyed `telemetry.raw` for `openontology` | 🚧 translation proven, Kafka path unverified |
 
 **Adjacent, independent:**
 
