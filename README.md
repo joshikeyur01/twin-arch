@@ -14,14 +14,20 @@
 | [`twin-anomaly`](https://github.com/joshikeyur01/twin-anomaly) | L4 | Fault injection → labelled dataset → ML detection | ✅ complete |
 | [`twin-fleet`](https://github.com/joshikeyur01/twin-fleet) | L4 | The same stack at N robots, with load tests that find the limits | ✅ complete |
 | [`twin-turbofan`](https://github.com/joshikeyur01/twin-turbofan) | — | RUL prediction: the predictive-maintenance archetype | 🚧 pipeline correct, awaiting real C-MAPSS data |
-| [`twin-gateway`](https://github.com/joshikeyur01/twin-gateway) | L2+L3 | The seam: fleet MQTT → keyed `telemetry.raw` for `openontology` | 🚧 translation proven, Kafka path unverified |
+| `twin-gateway` 🔒 | L2+L3 | The seam: fleet MQTT → keyed `telemetry.raw` for `openontology` | 🚧 translation proven, Kafka path unverified |
 
 **Adjacent, independent:**
 
 | Repo | What it is | Status |
 |------|-----------|--------|
 | [`openontology`](https://github.com/joshikeyur01/openontology) | Open-core digital-twin platform — Go ontology resolution engine, Redis state, streaming telemetry | 🚧 active |
-| [`oss-recon`](https://github.com/joshikeyur01/oss-recon) | Upstream bug reproductions and fixes for `asyncua`, `ccsdspy`, ROS 2 docs | 📓 log |
+| `oss-recon` 🔒 | Upstream bug reproductions and fixes for `asyncua`, `ccsdspy`, ROS 2 docs | 📓 log |
+
+🔒 **Private repository.** The name is unlinked deliberately: a link would 404 for
+everyone but the owner, which reads as a broken map rather than a closed door.
+`twin-gateway` stays private until the Kafka hop in its `docs/VERIFIED.md` is
+verified by running rather than by construction; `oss-recon` stays private because
+its `docs/PR_LOG.md` names real upstream contributors and records ceding strategy.
 
 ## How they fit together
 
